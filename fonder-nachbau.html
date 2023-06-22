@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!--Teil 1-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/static/fonder.ico">
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript  jquery -->
+    <script src="static/jquery/jquery.min.js"></script>
+
+    <link rel="shortcut icon" href="#">
+
+  <link rel="stylesheet" type="text/css" href="/static/base.css" />
+  <title>fonder | Tool</title>
+
+
+<link rel="stylesheet" type="text/css" href="/static/intern.css" />
+</head>
+
+<!--Teil 2-->
+
+
+<body>
+    <a id="top"></a>
+
+    <div class = "row min-vh-100 gradient-custom-2">
+
+    <div class = "col-xxl-2 col-lg-3 col-plot-control">
+
+        <div class = "container-fluent pb-3 pb-md-0">
+
+
+  <form method="POST">
+
+    <button type=submit class="btn btn-sm main_sub_btn" name="main_sub_btn" value=""></button>
+
+    <h6 class="d-flex justify-content-between align-items-center px-3 mt-2 mb-2 text-muted">
+      <span>Angezeigt</span>
+    </h6>
+
+    <ul class="nav flex-column">
+      
+
+          <li class="nav-item plot_nav_item mx-1 my-1">
+            <a class="nav-link text-muted" data-bs-toggle="collapse" href="#collapse0" role="button" style="float: left; text-decoration: none;">
+                Einzahlung
+            </a>
+            <button type=submit class="btn btn-sm del_plot" name="del_plot_btn" value="Einzahlung"><span data-feather="x"></span></button>
+          </li>
+
+          <div class="collapse" id="collapse0">
+            <div class="card card-body p-2 my-1 plot_con_collapse_style">
+              <div class="row">
+                <div class="col">
+
+                  <div class="form-group input-group-sm">
+                    <label for="cur_age_0"><small>Begin Alter</small></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cur_age_0"
+                      name="cur_age_0"
+                      value="27"
+                    />
+                  </div>
+
+                </div>
+                <div class="col">
+
+                  <div class="form-group input-group-sm">
+                    <label for="mon_inc_0"><small>monatl. Einzahlung</small></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="mon_inc_0"
+                      name="mon_inc_0"
+                      value="300.0"
+                    />
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        
+
+          <li class="nav-item plot_nav_item mx-1 my-1">
+            <a class="nav-link text-muted" data-bs-toggle="collapse" href="#collapse1" role="button" style="float: left; text-decoration: none;">
+                Depot
+            </a>
+            <button type=submit class="btn btn-sm del_plot" name="del_plot_btn" value="Depot"><span data-feather="x"></span></button>
+          </li>
+
+          <div class="collapse" id="collapse1">
+            <div class="card card-body p-2 my-1 plot_con_collapse_style">
+              <div class="row">
+                <div class="col">
+
+                  <div class="form-group input-group-sm">
+                    <label for="cur_age_1"><small>Begin Alter</small></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cur_age_1"
+                      name="cur_age_1"
+                      value="27"
+                    />
+                  </div>
+
+                </div>
+                <div class="col">
+
+                  <div class="form-group input-group-sm">
+                    <label for="mon_inc_1"><small>monatl. Einzahlung</small></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="mon_inc_1"
+                      name="mon_inc_1"
+                      value="300.0"
+                    />
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        
+
+          <li class="nav-item plot_nav_item mx-1 my-1">
+            <a class="nav-link text-muted" data-bs-toggle="collapse" href="#collapse2" role="button" style="float: left; text-decoration: none;">
+                FP | Alte Leipziger
+            </a>
+            <button type=submit class="btn btn-sm del_plot" name="del_plot_btn" value="FP | Alte Leipziger"><span data-feather="x"></span></button>
+          </li>
+
+          <div class="collapse" id="collapse2">
+            <div class="card card-body p-2 my-1 plot_con_collapse_style">
+              <div class="row">
+                <div class="col">
+
+                  <div class="form-group input-group-sm">
+                    <label for="cur_age_2"><small>Begin Alter</small></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cur_age_2"
+                      name="cur_age_2"
+                      value="27"
+                    />
+                  </div>
+
+                </div>
+                <div class="col">
+
+                  <div class="form-group input-group-sm">
+                    <label for="mon_inc_2"><small>monatl. Einzahlung</small></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="mon_inc_2"
+                      name="mon_inc_2"
+                      value="300.0"
+                    />
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        
+    </ul>
+
+    <h6 class="d-flex justify-content-between align-items-center px-3 mt-3 mb-3 text-muted">
+      <span>Gespeichert</span>
+    </h6>
+
+    <ul class="nav flex-column ">
+      
+    </ul>
+
+  </form>
+
+
+  <!--Teil 3-->
+</div>
+  </div>
+
+
+    <div class = "col-xxl-8 col-lg-7">
+
+        <div class = "container-fluent pt-2 px-3 px-md-0">
+
+            <form method="POST">
+
+                <button type=submit class="btn btn-sm main_sub_btn" name="main_sub_btn" value=""></button>
+
+                <div class="card shadow-sm my-0 py-0">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-xxl-6 col-xl-12">
+
+                                <div class="card shadow-none mt-0">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col-lg-7">
+
+                                                <p>Wähle eine vorinstallierte <strong>Fondspolice</strong></p>
+
+                                                <div class="dropdown">
+                                                    <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton11" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      Alte Leipziger
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        
+                                                            <li><input type="submit" class="dropdown-item " name="fondpolice" value="AXA"></li>
+                                                        
+                                                            <li><input type="submit" class="dropdown-item " name="fondpolice" value="Allianz"></li>
+                                                        
+                                                            <li><input type="submit" class="dropdown-item " name="fondpolice" value="Alte Leipziger"></li>
+                                                        
+                                                            <li><input type="submit" class="dropdown-item " name="fondpolice" value="Baloise"></li>
+                                                        
+
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 align-self-center">
+                                                <br />
+
+                                                <input type="submit" class="btn btn-outline-secondary" name="save_fonpol_button" value="Speicher Fondspolice">
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xxl-6 col-xl-12">
+
+                                <div class="card shadow-none mt-0">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col-lg-8">
+
+                                                <p>Wähle eine vorinstallierte <strong>Rürup</strong></p>
+
+                                                <div class="dropdown">
+                                                    <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      Allianz
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        
+                                                            <li><input type="submit" class="dropdown-item " name="rurup" value="AXA"></li>
+                                                        
+                                                            <li><input type="submit" class="dropdown-item " name="rurup" value="Allianz"></li>
+                                                        
+                                                            <li><input type="submit" class="dropdown-item " name="rurup" value="Alte Leipziger"></li>
+                                                        
+                                                            <li><input type="submit" class="dropdown-item " name="rurup" value="Baloise"></li>
+
+                                                        
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-4 align-self-center">
+                                                <br />
+
+                                                <input type="submit" class="btn btn-outline-secondary" name="save_rurup_button" value="Speicher Rürup">
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class = "row mt-2 pb-0">
+                            <div class = "col-md-4">
+
+                              <div class="form-group">
+                                <label for="mon_inc">Monatliche Einzahlung (in €)</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="mon_inc"
+                                  name="mon_inc"
+                                  value=300.0
+                                />
+                              </div>
+
+                              <br />
+
+                            </div>
+                            <div class = "col-md-4">
+
+                              <div class="form-group">
+                                <label for="cur_age">Alter (in Jahren)</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="cur_age"
+                                  name="cur_age"
+                                  value=27
+                                />
+                              </div>
+                              <br />
+
+                            </div>
+                            <div class = "col-md-4">
+
+                              <div class="form-group">
+                                  <label for="pens_age">Rentenalter (in Jahren)</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="pens_age"
+                                  name="pens_age"
+                                  value=67
+                                />
+                              </div>
+                              <br />
+
+                            </div>
+                        </div>
+
+
+                        <ul class="nav nav-tabs justify-content-center mt-0 mt-0">
+                            <li class="nav-item">
+                              <input type="submit" class="nav-link nav-tool " name="ins_val_p_btn" value="Person">
+                            </li>
+                            <li class="nav-item">
+                              <input type="submit" class="nav-link nav-tool  active " name="ins_val_d_btn" value="Depot">
+                            </li>
+                            <li class="nav-item">
+                              <input type="submit" class="nav-link nav-tool " name="ins_val_f_btn" value="Fondspolice">
+                            </li>
+                            <li class="nav-item">
+                              <input type="submit" class="nav-link nav-tool " name="ins_val_r_btn" value="Rürup">
+                            </li>
+                            <li class="nav-item">
+                              <input type="submit" class="nav-link nav-tool " name="ins_val_m_btn" value="Markt">
+                            </li>
+                            <li class="nav-item">
+                                <input type="submit" class="nav-link nav-tool " name="ins_val_t_btn" value="Steuern">
+                            </li>
+                        </ul>
+
+                        <br />
+
+                        <div class="collapse" id="collapseIntern">
+
+<lnk rel="stylesheet" type="text/css" href="/static/fonds.css" />
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js'></script>
+
+
+
+
+  <div class = "row">
+
+    <div class = "col-md-6">
+
+      <div class="form-group">
+        <label for="dep_costs_abs">Monatliche Depotkosten (in €)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="dep_costs_abs"
+          name="dep_costs_abs"
+          value=0.0
+        />
+      </div>
+
+      <br />
+
+      <div class="form-group">
+        <label for="dep_costs">Kapitalabhängig Depotkosten (in %)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="dep_costs"
+          name="dep_costs"
+          value=0.5
+        />
+      </div>
+
+      <br />
+
+      <!-- Fond change Modal -->
+      <div class="modal fade" id="fond_change_modal" tabindex="-1" aria-labelledby="fond_change_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="fond_change_modal_label">Fondswechsel</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Fondswechsel können anfallen, wenn der Anleger seine Strategie oder seine Wünsche ändert (z.B. "neue Trends" oder "nachhaltigeres Investieren").
+            <br />Für weitere Infos klicke <a href="/wiki#fond_chang">hier</a>.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="fonds_chang">Fondswechsel</label>
+        <span class="span_info" data-bs-toggle="modal" data-bs-target="#fond_change_modal">
+          <span data-feather="info" ></span>
+        </span>
+        <input
+          type="text"
+          class="form-control"
+          id="fonds_chang"
+          name="fonds_chang"
+          value=0
+        />
+      </div>
+
+      <br />
+
+      <div class="form-group">
+        <label for="dep_change_percent">Fondswechsel Anteil (in %)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="dep_change_percent"
+          name="dep_change_percent"
+          value=100
+        />
+      </div>
+
+      <br />
+
+      <!-- Freistellungsauftrag Modal -->
+      <div class="modal fade" id="freistellungsauftrag_modal" tabindex="-1" aria-labelledby="freistellungsauftrag_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="freistellungsauftrag_modal_label">Freistellungsauftrag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Der Freistellungsauftrag muss vom Anleger beim Kreditinstitut gestellt werden, um den Sparerpauschbetrag nutzen zu können.
+            <br />Für weitere Infos klicke <a href="/wiki#freistellungsauftrag">hier</a>.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          
+            Freibetrag
+          
+        </button>
+
+        <span class="span_info mt-2" data-bs-toggle="modal" data-bs-target="#freistellungsauftrag_modal">
+          <span data-feather="info" ></span>
+        </span>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><input type="submit" class="dropdown-item" name="freibetrag" value="kein Freibetrag"></li>
+          <li><input type="submit" class="dropdown-item" name="freibetrag" value="Freibetrag"></li>
+        </ul>
+      </div>
+
+    <br />
+
+        <div class="accordion mb-2" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Erweiterte Einstellungen
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="form-group">
+                  <label for="dep_start_money">Start-Geld (in €)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="dep_start_money"
+                    name="dep_start_money"
+                    value=0.0
+                  />
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class = "col-md-6">
+
+          <!-- Fond costs Modal -->
+          <div class="modal fade" id="fond_cost_modal" tabindex="-1" aria-labelledby="fond_cost_modal_label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="fond_cost_modal_label">TER</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Die TER (Total Expense Ratio) ist die Gesamtkostenquote eines Fonds oder ETFs. Enthalten sind beispielsweise Verwaltungs- und Betriebskosten.
+                <br />Für weitere Infos klicke <a href="/wiki#ter">hier</a>.
+                  </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow-sm mt-1">
+            <div class="card-body">
+                <h4 class="card-title text-center">ETF/Fonds Auswahl</h4>
+
+                <div class="fond-bar mt-3">
+                  <div class="container mt-3">
+
+                    <br />
+
+                    <div class="dropdown">
+                      <button class="btn btn-outline-secondary-fond btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                         - Custom - 
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><input type="submit" class="dropdown-item " name="fond" value=' - Custom - '></li>
+                          
+                              <li><input type="submit" class="dropdown-item " name="fond" value="iShares Dax"></li>
+                          
+                              <li><input type="submit" class="dropdown-item " name="fond" value="iShares S&amp;P 500"></li>
+                          
+                              <li><input type="submit" class="dropdown-item " name="fond" value="iShares MSCI World"></li>
+                          
+                              <li><input type="submit" class="dropdown-item " name="fond" value="iShares MSCI EM"></li>
+                          
+                              <li><input type="submit" class="dropdown-item " name="fond" value="iShares MSCI Pacific ex Japan"></li>
+                          
+                      </ul>
+                    </div>
+
+                    <br />
+
+                    
+
+                      <div class="form-group">
+                        <label for="fond_ter">Total Expense Ratio (in %)</label>
+                        <span class="span_info" data-bs-toggle="modal" data-bs-target="#fond_cost_modal">
+                          <span data-feather="info" ></span>
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fond_ter"
+                          name="fond_ter"
+                          value=0.0
+                        />
+                      </div>
+
+                    
+
+                    <div class="form-group">
+                      <label for="fond_part">Anteil (in %)</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fond_part"
+                        name="fond_part"
+                        value=100
+                      />
+                    </div>
+
+                    <br />
+
+
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button type=submit class="btn btn-sm btn-outline-secondary add_fond mb-3" name="add_fond_btn" value="now">Hinzufügen</button>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="container">
+
+                  <table class="table my-3 mr-3">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Anteil</th>
+                        <th scope="col">Entferne</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>iShares MSCI World</td>
+                        <td>10</td>
+                        <td><button type=submit class="btn btn-sm btn-outline-secondary del_fond" name="del_fond_btn" value="iShares MSCI World"><span data-feather="x"></span></button></td>
+                      </tr>
+                    
+                      <tr>
+                        <th scope="row">2</th>
+                        <td> - Custom - </td>
+                        <td>90</td>
+                        <td><button type=submit class="btn btn-sm btn-outline-secondary del_fond" name="del_fond_btn" value=" - Custom - "><span data-feather="x"></span></button></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+
+                  <div class="row mt-1">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                      <canvas id="fond_pie" width="800px" height="450px"></canvas>
+                    </div>
+                    <div class="col-lg-2"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+
+<script>
+var pie_fond = document.getElementById('fond_pie').getContext('2d');
+var cost_Chart = new Chart(pie_fond, {
+    type: 'pie',
+    data: {
+        labels : [
+          
+           "iShares MSCI World",
+          
+           " - Custom - ",
+          
+	    ],
+        datasets: [{
+              label: "Anteile (in %)",
+              backgroundColor: [
+                  
+                      "#3d5214",
+                  
+                      "#7ba428",
+                  
+              ],
+              data : [
+                  
+                     "10",
+                  
+                     "90",
+                  
+              ]
+          }]
+    },
+    options: {
+        responsive: true,
+        interaction: {
+           mode: 'nearest',
+           intersect: false
+        },
+        plugins: {
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        let label = context.label;
+                        let value = context.formattedValue;
+
+                        if (!label)
+                            label = 'Unknown'
+
+                        let percentage = value + '%';
+                        return label + ": " + percentage;
+                    }
+                }
+            }
+        }
+    }
+});
+</script>
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+
+<!--Teil 4-->
+
+
+<script src="static/chart.js/dist/chart.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/static/plot.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+<!-- Auszahlung Modal -->
+<div class="modal fade" id="auszahlung_modal" tabindex="-1" aria-labelledby="auszahlung_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="auszahlung_modal_label">Versteuerung der Auszahlung</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <p>Kapitalerträge müssen bei Auszahlung versteuert werden. Je nach Aktienquote unterliegen Gewinne aus Aktienfonds einer <a href="/wiki#teilfreistellung">Teilfreistellung</a>, sodass ein gewisser Gewinnanteil steuerfrei ist.</p>
+
+            <strong>Depot</strong>
+
+            <p>Der nach Teilfreistellung vorhandene Gewinnanteil muss zu 100% mit der <a href="/wiki#kst">Abgeltungssteuer</a> besteuert werden.</p>
+
+            <strong>Versicherung</strong>
+
+            <p>In der Versicherung gilt das sogenannten <a href="/wiki#halbeinkünfte">Halbeinkünfteverfahren</a> für Versicherungen. Das bedeutet, dass <strong>nach Berücksichtigung der Teilfreistellung</strong> nur 50% des Gewinnanteils versteuert werden muss.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- rente Modal -->
+<div class="modal fade" id="rente_modal" tabindex="-1" aria-labelledby="rente_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="rente_modal_label">Versteuerung der Rente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        Liegt in der Ansparphase Steuerfreiheit und in der Leistungsphase Steuerpflicht vor, spricht man von „nachgelagerter Besteuerung".
+        <br />Für weitere Infos klicke <a href="/wiki#rentenbesteuerung">hier</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Website -->
+<div class="row justify-content-center align-items-center">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-lg-6">
+
+                        <div class="card shadow-none">
+                            <div class="card-body">
+
+                                <p class="h5 text-center">Auszahlung <small class="fs-6 text-muted">nach Steuern</small><span class="span_info" data-bs-toggle="modal" data-bs-target="#auszahlung_modal"><span data-feather="info" ></span></span></p>
+                                <hr class="my-2">
+
+                                
+
+                                    
+
+                                        
+
+                                            <p class="lead mb-0 mt-2">Depot<span class="winner-feather" data-feather="award"></span></p>
+
+                                            
+
+                                        
+
+                                        <div class="progress position-relative">
+                                          <div class="progress-bar" role="progressbar" style="width: 100.0%;background-color: rgba(42,49,50,1);" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                              <small class="justify-content-center d-flex position-absolute w-100">435.280,64 €</small>
+                                          </div>
+                                        </div>
+
+
+                                            <p class="lead mb-0 mt-2">FP | Alte Leipziger</p>
+
+                                            
+
+                                        
+
+                                        <div class="progress position-relative">
+                                          <div class="progress-bar" role="progressbar" style="width: 96.50152600400514%;background-color: rgba(42,84,126,1);" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                              <small class="justify-content-center d-flex position-absolute w-100">420.052,46 €</small>
+                                          </div>
+                                        </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-lg-6">
+
+                            <div class="card shadow-none">
+                                <div class="card-body">
+
+                                    <p class="h5 text-center">Rente <small class="fs-6 text-muted">nach Steuern</small><span class="span_info" data-bs-toggle="modal" data-bs-target="#rente_modal"><span data-feather="info" ></span></span></p>
+                                    <hr class="my-2">
+
+                                    
+
+                                        
+
+                                            <p class="lead mb-0 mt-2">FP | Alte Leipziger<span class="winner-feather" data-feather="award"></span></p>
+
+                                        
+
+                                        
+
+                                            <div class="progress position-relative">
+                                              <div class="progress-bar" role="progressbar" style="width: 100.0%;background-color: rgba(42,84,126,1);" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                  <small class="justify-content-center d-flex position-absolute w-100">766,23 €</small>
+                                              </div>
+                                            </div>
+
+                                        
+
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+
+                    
+
+
+                    <div class="col-lg-12 pt-3">
+
+                        <canvas id="lineChart" width="700" height="400" ></canvas>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function pers_text_fct() {
+  // Get the checkbox
+  var checkBox = document.getElementById("pers_checkbox");
+  // Get the output text
+  var text = document.getElementById("pers_text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function depot_text_fct() {
+  // Get the checkbox
+  var checkBox = document.getElementById("depot_checkbox");
+  // Get the output text
+  var text = document.getElementById("depot_text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function fonpol_text_fct() {
+  // Get the checkbox
+  var checkBox = document.getElementById("fonpol_checkbox");
+  // Get the output text
+  var text = document.getElementById("fonpol_text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function rurup_text_fct() {
+  // Get the checkbox
+  var checkBox = document.getElementById("rurup_checkbox");
+  // Get the output text
+  var text = document.getElementById("rurup_text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function ins_cost_text_fct() {
+  // Get the checkbox
+  var checkBox = document.getElementById("ins_cost_checkbox");
+  // Get the output text
+  var text = document.getElementById("ins_cost_text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function markt_text_fct() {
+  // Get the checkbox
+  var checkBox = document.getElementById("markt_checkbox");
+  // Get the output text
+  var text = document.getElementById("markt_text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function tax_text_fct() {
+  // Get the checkbox
+  var checkBox = document.getElementById("tax_checkbox");
+  // Get the output text
+  var text = document.getElementById("tax_text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function plot_text_fct() {
+  // Get the checkbox
+  var checkBox = document.getElementById("plot_checkbox");
+  // Get the output text
+  var text = document.getElementById("plot_text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+</script>
+
+<script>
+var line = document.getElementById('lineChart').getContext('2d');
+var line_Chart = new Chart(line, {
+    type: 'line',
+    data: {
+        labels : [
+           "28",
+           "29",
+           "30",],
+        datasets: [
+            {
+              backgroundColor: "rgba(118,54,38,1)",
+              pointBackgroundColor: "rgba(118,54,38,1)",
+              borderColor: "rgba(118,54,38,1)",
+              borderWidth: 4,
+              pointRadius: 0,
+              fill: false,
+              label: "Einzahlung",
+              data : [
+                   "3600.0",
+                   "7200.0",
+                   "10800.0",]
+            },
+            {
+              backgroundColor: "rgba(42,49,50,1)",
+              pointBackgroundColor: "rgba(42,49,50,1)",
+              borderColor: "rgba(42,49,50,1)",
+              borderWidth: 4,
+              pointRadius: 0,
+              fill: false,
+              label: "Depot",
+              data : [
+                   "3796.92",
+                   "7798.44",
+                   "12015.59",
+                 ]
+            },
+            {
+              backgroundColor: "rgba(42,84,126,1)",
+              pointBackgroundColor: "rgba(42,84,126,1)",
+              borderColor: "rgba(42,84,126,1)",
+              borderWidth: 4,
+              pointRadius: 0,
+              fill: false,
+              label: "FP | Alte Leipziger",
+              data : [
+                   "2780.23",
+                   "5720.21",
+                   "8829.1",
+                 ]
+            },
+        ]
+    },
+    options: {
+        responsive: true,
+        interaction: {
+           mode: 'nearest',
+           intersect: false
+        }
+    }
+});
+</script>
+
+<script>
+var line = document.getElementById('lineChart_pdf_2').getContext('2d');
+var line_Chart = new Chart(line, {
+    type: 'line',
+    data: {
+        labels : [
+           "28",
+           "29",
+           "30",
+	    ],
+        datasets: [
+            {
+              backgroundColor: "rgba(118,54,38,1)",
+              pointBackgroundColor: "rgba(118,54,38,1)",
+              borderColor: "rgba(118,54,38,1)",
+              borderWidth: 4,
+              pointRadius: 0,
+              fill: false,
+              label: "Einzahlung",
+              data : [
+                "3600.0",
+                   "7200.0",
+                   "10800.0",]
+            },
+            {
+              backgroundColor: "rgba(42,49,50,1)",
+              pointBackgroundColor: "rgba(42,49,50,1)",
+              borderColor: "rgba(42,49,50,1)",
+              borderWidth: 4,
+              pointRadius: 0,
+              fill: false,
+              label: "Depot",
+              data : [
+                   "3796.92",
+                   "7798.44",
+                   "12015.59",]
+            },
+            {
+              backgroundColor: "rgba(42,84,126,1)",
+              pointBackgroundColor: "rgba(42,84,126,1)",
+              borderColor: "rgba(42,84,126,1)",
+              borderWidth: 4,
+              pointRadius: 0,
+              fill: false,
+              label: "FP | Alte Leipziger",
+              data : [
+                   "2780.23",
+                   "5720.21",
+                   "8829.1",]
+            },]
+    },
+    options: {
+        animation: {
+            duration: 0
+        },
+        responsive: true,
+        animation: {
+            duration: 0
+        }
+    }
+});
+
+var line_cost = document.getElementById('costChart_fonpol_pdf').getContext('2d');
+var cost_Chart = new Chart(line_cost, {
+    type: 'line',
+    data: {
+        labels : [
+           "28",
+           "29",
+           "30",],
+        datasets: [
+
+            {
+              backgroundColor: "rgba(123,67,61,0.2)",
+              pointBackgroundColor: "rgba(123,67,61,1)",
+              borderColor: "rgba(123,67,61,1)",
+              pointRadius: 0,
+              stepped: true,
+              fill: true,
+              label: "Abschlusskosten",
+              data : [
+                   "720.0",
+                   "720.0",
+                   "720.0",]
+            },
+
+            {
+              backgroundColor: "rgba(148, 84,77,0.2)",
+              pointBackgroundColor: "rgba(148, 84,77,1)",
+              borderColor: "rgba(148, 84,77,1)",
+              pointRadius: 0,
+              stepped: true,
+              fill: true,
+              label: "Beitragsabhängige Verwaltungskosten",
+              data : [
+                   "250.82728202200056",
+                   "250.82728202200056",
+                   "250.82728202200056",
+                 ]
+            },
+        ]
+    },
+    options: {
+        responsive: true,
+        interaction: {
+           mode: 'nearest',
+           intersect: false
+           }
+    }
+});
+
+var pie_rurup = document.getElementById('rurup_pie_pdf').getContext('2d');
+var cost_Chart = new Chart(pie_rurup, {
+  type: 'pie',
+  data: {
+      labels : [
+         "Einzahlung", "Ersparnis"
+      ],
+      datasets: [{
+            label: "Monatliche Ersparnis",
+            backgroundColor: [
+                "rgba(118,54,38,1)", "rgba(42,84,126,1)"
+            ],
+            data : [
+                "300.0", "122.48"
+            ]
+        }]
+  },
+  options: {
+      responsive: true,
+      interaction: {
+         mode: 'nearest',
+         intersect: false
+      },
+      plugins: {
+          tooltip: {
+              callbacks: {
+                  label: function(context) {
+                      let label = context.label;
+                      let value = context.formattedValue;
+                      if (!label)
+                          label = 'Unknown'
+                      let percentage = value + '€';
+                      return label + ": " + percentage;
+                  }
+              }
+          }
+      }
+  }
+});
+
+var line_cost = document.getElementById('costChart_rurup_pdf').getContext('2d');
+var cost_Chart = new Chart(line_cost, {
+    type: 'line',
+    data: {
+        labels : [
+           "28",
+           "29",
+           "30",
+	    ],
+        datasets: [
+            {
+              backgroundColor: "rgba(123,67,61,0.2)",
+              pointBackgroundColor: "rgba(123,67,61,1)",
+              borderColor: "rgba(123,67,61,1)",
+              pointRadius: 0,
+              stepped: true,
+              fill: true,
+              label: "Abschlusskosten",
+              data : [
+                   "720.0",
+                   "720.0",
+                   "720.0",]
+            },
+
+            {
+              backgroundColor: "rgba(148, 84,77,0.2)",
+              pointBackgroundColor: "rgba(148, 84,77,1)",
+              borderColor: "rgba(148, 84,77,1)",
+              pointRadius: 0,
+              stepped: true,
+              fill: true,
+              label: "Beitragsabhängige Verwaltungskosten",
+              data : [
+                   "162.0",
+                   "162.0",
+                   "162.0",]
+            },
+        ]
+    },
+    options: {
+        responsive: true,
+        interaction: {
+           mode: 'nearest',
+           intersect: false
+           }
+    }
+});
+
+var pie_fond = document.getElementById('fond_pie_pdf').getContext('2d');
+var cost_Chart = new Chart(pie_fond, {
+    type: 'pie',
+    data: {
+        labels : [
+           "iShares MSCI World",
+           " - Custom - ",
+	    ],
+        datasets: [{
+              label: "Anteile (in %)",
+              backgroundColor: [
+                      "#3d5214",
+                      "#7ba428",
+              ],
+              data : [
+                     "10",
+                     "90",]
+          }]
+    },
+    options: {
+        responsive: true,
+        interaction: {
+           mode: 'nearest',
+           intersect: false
+        },
+        plugins: {
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        let label = context.label;
+                        let value = context.formattedValue;
+
+                        if (!label)
+                            label = 'Unknown'
+
+                        let percentage = value + '%';
+                        return label + ": " + percentage;
+                    }
+                }
+            }
+        }
+    }
+});
+
+function downloadcustom_pdfPDF(){
+
+    let pdf_content = document.getElementById('custom_pdf_content');
+
+    window.jsPDF = window.jspdf.jsPDF;
+
+    html2canvas(pdf_content, {scrollY: -window.scrollY}).then(function(canvas) {
+
+          const imgData = canvas.toDataURL('image/jpeg');
+          const pdf = new jsPDF('p', 'mm', 'a4');
+          const imgProps = pdf.getImageProperties(imgData);
+
+          // doc and image dimensions
+          const pdfWidth = pdf.internal.pageSize.getWidth();
+          const pdfHeight = pdf.internal.pageSize.getHeight();
+          const imgWidth = imgProps.width;
+          const imgHeight = imgProps.height;
+
+          // calculating right scale to fit the page
+          let position = 0;
+          const scale = pdfWidth / imgWidth;
+          const finalWidth = imgWidth * scale * 0.75;
+          const finalHeight = imgHeight * scale * 0.75;
+          const leftMargin = (pdfWidth - finalWidth) / 2;
+          var heightLeft = finalHeight;
+
+          pdf.addImage( imgData, 'PNG', leftMargin, position, finalWidth, finalHeight, 'alias', 'FAST');
+          heightLeft -= pdfHeight;
+
+          // add image with alias and compression of your choice
+          while (heightLeft >= 0) {
+              position = heightLeft - finalHeight;
+              pdf.addPage();
+              pdf.addImage( imgData, 'PNG', leftMargin, position, finalWidth, finalHeight, 'alias', 'FAST');
+              heightLeft -= pdfHeight;
+            }
+          pdf.save( 'fonder_vergleich_custom.pdf' );
+        });
+}
+</script>
+
+<script>
+var line_cost = document.getElementById('costChart').getContext('2d');
+var cost_Chart = new Chart(line_cost, {
+    type: 'line',
+    data: {
+        labels : [
+           "28",
+           "29",
+	    ],
+        datasets: [
+
+            {
+              backgroundColor: "rgba(123,67,61,0.2)",
+              pointBackgroundColor: "rgba(123,67,61,1)",
+              borderColor: "rgba(123,67,61,1)",
+              pointRadius: 0,
+              stepped: true,
+              fill: true,
+              label: "Abschlusskosten",
+              data : [
+                   "720.0",
+                   "720.0",
+                   "720.0",]
+            },
+
+            {
+              backgroundColor: "rgba(148, 84,77,0.2)",
+              pointBackgroundColor: "rgba(148, 84,77,1)",
+              borderColor: "rgba(148, 84,77,1)",
+              pointRadius: 0,
+              stepped: true,
+              fill: true,
+              label: "Beitragsabhängige Verwaltungskosten",
+              data : [
+                   "250.82728202200056",
+                   "250.82728202200056",
+                   "250.82728202200056",]
+            },
+        ]
+    },
+    options: {
+        responsive: true,
+        interaction: {
+           mode: 'nearest',
+           intersect: false
+           }
+    }
+});
+</script>
+
+    <!-- Icons -->
+    <script src="/static//node_modules/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+</body>
+</html>
